@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+#include "windows.h"
+
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    double a, x, c, F;
+    cout << "Введіть a =";
+    cin >> a;
+    cout << "Введіть x =";
+    cin >> x;
+    cout << "Введіть c =";
+    cin >> c;
+    if ((c <= 5) && (a == 0)) {
+        F = fabs(10 * a + pow(x, 2));
+    }
+    else {
+        if ((c >= 5) && (a != 0)) {
+            F = (a - x) / (c * x);
+        }
+        else {
+            F = (2 * x) / (c - 5);
+        }
+        cout << setw(8) << setprecision(8) << "F=" << F << endl;;
+
+    }
+}
