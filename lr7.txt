@@ -18,3 +18,29 @@ int main()
 
     return 0;
 }
+
+#include <iostream>
+#include "windows.h"
+using namespace std;
+
+int main() 
+{
+    double m, x, n, s, k;
+    cout << "Enter m: " << endl;
+    cin >> m;
+    cout << "Enter n: " << endl;
+    cin >> n;
+    cout << "Enter s(Example : 0.123): " << endl;
+    cin >> s;
+
+    k = n + s;
+    cout << "k: " << k << endl;
+    x = (double) m / k;
+    cout << "x: " << x << endl;
+    system("pause");
+    return 0;
+
+}
+
+
+
