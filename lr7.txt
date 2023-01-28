@@ -1,0 +1,20 @@
+#include <iostream> 
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float z, y;
+    int mult = 1;
+    cout << "Enter y:";
+    cin >> y;
+    mult = 1;
+    for (int k = 1; k <= 5; k++)
+    { mult += k * k;
+}
+     z = (y + y) / y * y * sin(y) * sin(y);
+    cout << "Z = " << z;
+
+    return 0;
+}
