@@ -1,11 +1,25 @@
-   else {
-        if ((c >= 5) && (a != 0)) {
-            F = (a - x) / (c * x);
-        }
-        else {
-            F = (2 * x) / (c - 5);
-        }
-        cout << setw(8) << setprecision(8) << "F=" << F << endl;;
+#include <iostream> 
+#include <iomanip> 
+#include <math.h> 
+using namespace std;
+int main()
+{
+    int a, b;
+    float h, x, Y;
+    cout << "Enter x =";
+    cin >> x;
+    cout << "Enter b =";
+    cin >> b;
+    cout << "Enter h =";
+    cin >> h;
+    cout << setw(15) << "-=DO While=-" << endl;
+    cout << setw(5) << "x" << setw(10) << "Y" << endl;
 
-    }
+    do {
+        Y = sin(x * x) + cos(x * x);
+        cout << setw(5) << x << setw(10) << Y << endl;
+        x += h;
+    } while (x <= b);
+    system("pause");
+    return 0;
 }
